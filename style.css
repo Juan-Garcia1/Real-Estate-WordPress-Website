@@ -1,0 +1,85 @@
+/*
+Theme Name: Real Estate Theme
+Template: twentynineteen
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Listing */
+.listing-header {
+  color: #fff;
+}
+
+.listing-header__title::before {
+  content: "" !important;
+}
+.listing-header__sub-title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+.listing-header__price {
+  font-weight: bold;
+}
+
+.surface-section,
+.furnishing-section,
+.price-score-section,
+.additional-info-section,
+.location-and-availability-section {
+  padding: 5% 0;
+}
+
+.surface-info {
+  padding: 30px 10px;
+}
+
+.surface-info__icon {
+  max-width: 30%;
+}
+.surface-info__detail {
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.furnishing-type,
+.price-score {
+  text-transform: uppercase;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #943dc6;
+}
+
+.furnished-img,
+.price-score-img {
+  width: 60%;
+}
+
+.additional-info-section p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.location,
+.availability {
+  color: #943dc6;
+}
+
+h1:not(.site-title):before,
+h2:before {
+  content: "";
+  display: initial;
+  margin: initial;
+  width: initial;
+  height: initial;
+  background: none;
+}
