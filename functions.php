@@ -17,3 +17,12 @@ function load_scripts() {
     wp_enqueue_script('bootstrap');
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+// Change search function globally to search only listing post types
+function prefix_limit_post_types_in_search( $query ) {
+    if ( $query->is_search ) {
+        $query->set( 'post_type', array( 'listing' ) );
+    }
+    return $query;
+}
+add_filter( 'pre_get_posts', 'prefix_limit_post_types_in_search' );
