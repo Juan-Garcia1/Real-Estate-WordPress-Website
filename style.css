@@ -1,6 +1,6 @@
 /*
 Theme Name: Real Estate Theme
-Template: twentynineteen
+
 */
 *,
 *:before,
@@ -82,4 +82,30 @@ h2:before {
   width: initial;
   height: initial;
   background: none;
+}
+
+article h5 {
+  color: initial;
+}
+
+#searchform {
+  display: flex;
+}
+#searchform [type="text"] {
+  border: 0;
+  flex: 1;
+  padding: 8px 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 16px;
+  font-family: sans-serif;
+  outline: none;
+}
+#searchform [type="submit"] {
+  background: #943dc6;
+  border-radius: 0;
+  padding: 5px 30px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 16px;
 }
