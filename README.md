@@ -10,3 +10,5 @@ A fictional Real Estate WordPress Website using [Custom Post Types UI](https://w
 - [x] Display Latest Listings in the Front Page
 - [x] Create searchform.php
 - [x] Create seach.php (displays search results)
+- [x] Create archive page
+- [x] Create content.php
