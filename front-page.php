@@ -13,15 +13,7 @@
     ?>
     <div class="row">
       <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-        <div class="col-sm-6 p-3">
-          <a href="<?php the_permalink(); ?>">
-            <article>
-                <?php the_post_thumbnail("large"); ?>
-                <h5><?php the_title(); ?></h5>
-              </article>
-          </a>  
-        </div>
-        <!-- col-sm-6 -->
+        <?php get_template_part("content"); ?>
       <?php endwhile; ?>
 
     </div>
